@@ -16,6 +16,6 @@ router.register(r'smslogs', SMSLogViewSet, basename='smslog')
 router.register(r'expenses', ExpenseViewSet, basename='expense')
 
 urlpatterns = [
-    path('', include(router.urls)),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    path('', include(router.urls))
+    
 ]

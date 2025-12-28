@@ -66,8 +66,7 @@ class SMSLogSerializer(serializers.ModelSerializer):
         queryset=Tenant.objects.all(), source='tenant', write_only=True)
     class Meta:
         model = SMSLog
-        fields = ['id','tenant','tenant_id','message','status','sent_at']
-        
+        fields = ['id', 'tenant','tenant_id', 'message', 'sent_at', 'status']
         
 class ExpenseSerializer(serializers.ModelSerializer):
     class Meta:

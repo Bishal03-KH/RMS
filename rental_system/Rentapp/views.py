@@ -107,7 +107,7 @@ class SMSLogViewSet(viewsets.ModelViewSet):
     serializer_class = SMSLogSerializer
     
 class ExpenseViewSet(viewsets.ModelViewSet):
-    queryset = SMSLog.objects.all()
+    queryset = Expense.objects.all()
     serializer_class = ExpenseSerializer
     
     
